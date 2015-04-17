@@ -1,0 +1,35 @@
+{
+  "name": "HTML5 Demo",
+  "version": "0.0.1",
+  "author": "Saurabh Kumar",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-cssmin": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-cssc": "*",
+    "grunt-htmlhint": "*",
+    "matchdep": "*",
+    "grunt-reload": "*",
+    "grunt-express": "*",
+    "grunt-open": "*",
+	"grunt-bower-concat" : "*"
+  },
+  "description": "HTML 5 Demo Workspace",
+  "keywords": [
+    "HTML5"
+  ],
+  "authors": [
+    "Saurabh Kumar"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

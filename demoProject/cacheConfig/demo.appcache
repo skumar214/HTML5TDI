@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2015-04-14 v1.0.1
+/css/theme.css
+/img/html5.jpg
+/js/base.js
+
+NETWORK:
+
+
+FALLBACK:
+/html/ /offline.html

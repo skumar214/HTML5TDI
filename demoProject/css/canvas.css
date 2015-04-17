@@ -1,0 +1,20 @@
+#stageCanvas
+		{
+			background-color:white;
+		}
+		
+.pstyle{
+			text-align:left;
+			font-family: Trebuchet MS, arial, sans-serif;
+			color:#333333;
+		}
+canvas.one
+		{
+		border-style:solid;
+		border-width:5px;
+		
+		}	
+clock.two
+		{
+		background-color:#333;
+		}
