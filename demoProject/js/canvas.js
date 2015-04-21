@@ -1,7 +1,4 @@
 
-
-
-
 function init(){
 
 var c = document.getElementById("stagecanvas");
@@ -46,3 +43,4 @@ ctx.fillRect(300,300,100,100);
 
 }
 
+window.onload = init;
