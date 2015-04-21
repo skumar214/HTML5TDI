@@ -1,11 +1,11 @@
 CACHE MANIFEST
 # 2015-04-14 v1.0.1
-/css/theme.css
-/img/html5.jpg
-/js/base.js
+
+CACHE:
+/js/appCache.js
 
 NETWORK:
-
+*
 
 FALLBACK:
-/html/ /offline.html
+/onlinemodule /appcachefallback.html
