@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Web Messaging Demo</title>
+<script>
+function receiver(event) {
+	if (event.origin == 'http://localhost') {
+		   var op = document.getElementById("ifrcontent");
+			op.innerHTML  = event.data;
+	}
+}
+window.addEventListener('message', receiver, false);
+</script>
+</head>
+<body>
+<div id="ifrcontent">This is initial iFrame content</div>
+</body>
+</html>
+
+

@@ -12,7 +12,8 @@ module.exports = function(grunt){
 		            bases: ['./demoProject'],
 		            port: 80,
 		            hostname: "localhost",
-		            livereload: true
+		            livereload: true,
+					server: './server/main'
 		        }
 		    }
 		},
@@ -111,5 +112,4 @@ module.exports = function(grunt){
 
  //   grunt.registerTask('default', ['htmlhint', 'bower_concat', 'uglify', 'express',  'open',  'watch']);
 	grunt.registerTask('default', ['htmlhint', 'express',  'open',  'watch']);
-
 };
