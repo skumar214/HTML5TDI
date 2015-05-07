@@ -1,18 +1,39 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<title>DRAG AND DROP Demo </title>
- <link rel="stylesheet" type="text/css" href="../css/dragdrop.css">
-<script src="../js/dragdrop.js"></script>
-</head>
-<body bgcolor="#728478">
-<div id="targetdiv" class="box1" ondrop="drop(event)" ondragover="allowDrop(event)" >Drop the image here</div>
-
-
-<div class="box2">
-<img id="sourceimage" src="../img/html5.png" draggable="true" ondragstart="drag(event)" alt="Image not supported">
-</div>
-
-
-</body>
+	<head>
+		<title>
+			DRAG AND DROP Demo
+		</title>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/dragdrop.css" rel="stylesheet">
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../js/dragdrop.js"></script>
+	</head>
+	<body class="container panel panel-default">
+		<header>
+			<h1>Drag and Drop</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/dragdrop.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
+		<div class="dragbox" id="targetdiv" ondragover="allowDrop(event)" ondrop="drop(event)">
+			<h3>Drop the image here</h3>
+		</div>
+		</article>
+		<article>
+		<div class="dragbox">
+			<img alt="Image not supported" draggable="true" id="sourceimage" ondragstart="drag(event)" src="../img/html5.png">
+		</div>
+		</article>
+		</section>
+		<footer>
+		<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
+	</body>
 </html>

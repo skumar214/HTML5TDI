@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Geolocation Demo </title>
-<script src="../js/geolocation.js"></script>
-</head>
-<body onload="init()">
-<button onclick="getLocation()">Click the button to get your coordinates</button>
-<p id="demo"></p>
-<div id="mapholder"></div>
-</body>
+	<head>
+		<title>
+			Geolocation Demo
+		</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../js/geolocation.js"></script>
+	</head>
+	<body class="container panel panel-default" onload="init()">
+		<header>
+			<h1>Geo Location</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand" />
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/geolocation.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
+		<button onclick="getLocation()"><h4>Click the button to get your coordinates</h4></button>
+		<h4><p id="demo"></p></h4>
+		<div id="mapholder"></div>
+	</article>
+		</section>
+		<footer>
+		<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
+	</body>
 </html>

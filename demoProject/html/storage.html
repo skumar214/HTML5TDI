@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Local Storage Demo</title>
-	<script src="../js/storage.js"></script>
- </head>
-<body onload="init()" bgcolor="#728478">
- Local Result: <div id="localresult"></div>
- <button onclick="sessionClick()">Click</button> <br/>
- Session Result:<div id="sessionresult"></div>
-</body>
+	<head>
+		<title>
+			Local Storage Demo
+		</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../js/storage.js"></script>
+	</head>
+	<body class="container panel panel-default" onload="init()">
+		<header>
+			<h1>Web Storage</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/storage.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
+		<h3>Local Result:
+		<div id="localresult"></div>
+		</h3>
+		</article>
+		<article>
+		<h3>Session Result:
+		<div id="sessionresult"></div><button onclick="sessionClick()">Click</button>
+		</h3>
+		</article>
+		</section>
+		<footer>
+		<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
+	</body>
 </html>

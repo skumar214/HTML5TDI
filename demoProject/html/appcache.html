@@ -1,13 +1,34 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html manifest="http://localhost/cacheConfig/demo.appcache">
-<head>
-<title>AppCache Demo </title>
-<script src="../js/appCache.js"></script>
-<script src="../js/appNoCache.js"></script>
-</head>
-<body>
- <button onclick="testCache()">Get Cached Data</button>
- <button onclick="testNoCache()">Get Server Data</button>
- <img src="../img/html5.jpg" alt="Image not renderable">
-</body>
+	<head>
+		<title>
+			AppCache Demo
+		</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../js/appCache.js"></script>
+		<script src="../js/appNoCache.js"></script>
+	</head>
+	<body class="container panel panel-default">
+	<header>
+			<h1>Application Cache</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/appcache.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
+		<button onclick="testCache()"><h3>Get Cached Data</h3></button> 
+		<button onclick="testNoCache()"><h3>Get Server Data</h3></button> 
+		<img alt="Image not renderable" src="../img/html5.jpg">
+	</article>
+		</section>
+		<footer>
+			<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
+	</body>
 </html>

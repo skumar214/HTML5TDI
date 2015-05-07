@@ -15,9 +15,9 @@
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" type="text/css" href="../css/base.css">
 		<link rel="stylesheet" type="text/css" href="../css/bower.min.css">
-
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
-    <body>
+    <body class="container panel panel-default">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -27,11 +27,11 @@
   <h1>Monday Times</h1>
 </header>
 
-<nav>
+<nav class="navbar navbar-default"	>
+<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
   <ul>
-     <li>News</li>
-    <li>Sports</li>
-    <li>Weather</li>
+     <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/symantic.html">Source</a></li>
+    <li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
   </ul>
 </nav>
 
@@ -61,7 +61,7 @@
 </section>
 
 <footer>
-   <p>&copy; 2014 Monday Times. All rights reserved.</p>
+   <p>&copy; 2015 Monday Times. All rights reserved.</p>
 </footer>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -76,5 +76,6 @@
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+		
     </body>
 </html>

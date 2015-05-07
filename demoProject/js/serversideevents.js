@@ -2,9 +2,9 @@ window.onload = function() {
 if(typeof(EventSource) !== "undefined") {
     var source = new EventSource("/stream");
 	source.onmessage = function(event) {
-        document.getElementById("result").innerHTML += event.data + "<br>";
+        document.getElementById("scrollableresult").innerHTML += event.data + "<br>";
     };
 } else {
-    document.getElementById("result").innerHTML = "Sorry, your browser does not support server-sent events...";
+    document.getElementById("scrollableresult").innerHTML = "Sorry, your browser does not support server-sent events...";
 }
 }

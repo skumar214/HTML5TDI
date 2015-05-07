@@ -1,58 +1,78 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-<head>
-<script>
+	<head>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/base.css" rel="stylesheet">
+		<script>
 function drawShape(){
-  // Get the canvas element using the DOM
-  var c = document.getElementById('mycanvas');
+		// Get the canvas element using the DOM
+		var c = document.getElementById('mycanvas');
 
-  // Make sure we don't execute when canvas isn't supported
-  if (c.getContext){
+		// Make sure we don't execute when canvas isn't supported
+		if (c.getContext){
 
-    // use getContext to use the canvas for drawing
-var ctx = c.getContext('2d'); //webgl
+		// use getContext to use the canvas for drawing
+		var ctx = c.getContext('2d'); //webgl
 
-//Draw a Line
-ctx.moveTo(0,0);
-ctx.lineTo(200,100);
-ctx.stroke();
+		//Draw a Line
+		ctx.moveTo(0,0);
+		ctx.lineTo(200,100);
+		ctx.stroke();
 
-//Draw a Circle
-ctx.beginPath();
-ctx.arc(80,100,40,0,2*Math.PI);
-ctx.stroke();
+		//Draw a Circle
+		ctx.beginPath();
+		ctx.arc(80,100,40,0,2*Math.PI);
+		ctx.stroke();
 
-//Draw a Text
-ctx.font = "30px Arial";
-ctx.fillText("Canvas",c.width/3,50);
-
-
-// Create Linear gradient
-var grd = ctx.createLinearGradient(120,120,250,100);
-grd.addColorStop(0, '#FF0000'); 
-grd.addColorStop(0.285714286, '#FF7F00'); 
-grd.addColorStop(0.428571429, '#FFFF00'); 
-grd.addColorStop(0.571428571, '#00FF00'); 
-grd.addColorStop(0.714285714, '#0000FF'); 
-grd.addColorStop(0.857142857, '#4B0082'); 
-grd.addColorStop(1.0, '#8F00FF');
-ctx.fillStyle = grd;
-ctx.fillRect(120,120,250,100)
+		//Draw a Text
+		ctx.font = "30px Arial";
+		ctx.fillText("HTML5",c.width/3,50);
 
 
-// Create Circular gradient
-var grd = ctx.createRadialGradient(200,200,50,200,200,10);
-grd.addColorStop(0,"red");
-grd.addColorStop(1,"white");
-ctx.fillStyle = grd;
-ctx.fillRect(200,200,50,50);
-  } else {
-    alert('You need Safari or Firefox 1.5+ to see this demo.');
-  }
-}
-</script>
-</head>
-<body onload="drawShape();">
-   <canvas id="mycanvas"></canvas>
-</body>
+		// Create Linear gradient
+		var grd = ctx.createLinearGradient(120,120,250,100);
+		grd.addColorStop(0, '#FF0000'); 
+		grd.addColorStop(0.285714286, '#FF7F00'); 
+		grd.addColorStop(0.428571429, '#FFFF00'); 
+		grd.addColorStop(0.571428571, '#00FF00'); 
+		grd.addColorStop(0.714285714, '#0000FF'); 
+		grd.addColorStop(0.857142857, '#4B0082'); 
+		grd.addColorStop(1.0, '#8F00FF');
+		ctx.fillStyle = grd;
+		ctx.fillRect(120,120,250,100)
+
+
+		// Create Circular gradient
+		var grd = ctx.createRadialGradient(200,200,50,200,200,10);
+		grd.addColorStop(0,"red");
+		grd.addColorStop(1,"white");
+		ctx.fillStyle = grd;
+		ctx.fillRect(200,200,50,50);
+		} else {
+		alert('You need Safari or Firefox 1.5+ to see this demo.');
+		}
+		}
+		</script>
+		<title></title>
+	</head>
+	<body onload="drawShape();" class="container panel panel-default">
+	<header>
+			<h1>Canvas</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/canvasbasic.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
+		<canvas id="mycanvas"></canvas>
+		</article>
+		</section>
+			<footer>
+			<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
+	</body>
 </html>

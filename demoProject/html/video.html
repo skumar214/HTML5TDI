@@ -2,8 +2,22 @@
 <html>
 <head>
 <title>Video Demo </title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link href="../css/base.css" rel="stylesheet">
 </head>
-<body>
+<body class="container panel panel-default">
+		<header>
+			<h1>Video Support</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/video.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
 <video controls="controls" preload="auto" width="640" height="360"> 
 	<source src="../video/video.webm" type="video/webm" />
 	<source src="../video/video.mp4" type="video/mp4" /> 
@@ -15,6 +29,11 @@
 			<embed src="player.swf" allowscriptaccess="always" allowfullscreen="true" flashvars="file=../video/video.mp4" />
 		</object> 
 </video> 
+</article>
+		</section>
+		<footer>
+			<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
 </body>
 </html>
 

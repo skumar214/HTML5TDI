@@ -2,6 +2,8 @@
 <html>
 <head>
 <title>Web Messaging Demo</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link href="../css/base.css" rel="stylesheet">
 <script>
 function messagingExample() {
        var o = document.getElementById("ifr");
@@ -13,12 +15,30 @@ function remoteMessaging() {
     }
 </script>
 </head>
-<body>
+<body class="container panel panel-default">
+<header>
+		<h1>Cross Document Messaging</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/webmessaging1.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
 <iframe height="200" id="ifr" src="/html/webmessaging2.html" ></iframe>
-<input type="button" value="Send Message to Local Iframe" onclick="messagingExample();"/>
-
+<h4><input type="button" value="Send Message to Local Iframe" onclick="messagingExample();"/></h4>
+</article>
+<article>
 <iframe id="remotepage" src="http://html5demos.com/postmessage-target.html"></iframe>
-<input type="button" value="Send Message to Remote Iframe" onclick="remoteMessaging();"/>
+<h4><input type="button" value="Send Message to Remote Iframe" onclick="remoteMessaging();"/></h4>
+</article>
+</section>
+		<footer>
+			<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
 </body>
 </html>
 

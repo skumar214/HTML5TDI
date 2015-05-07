@@ -1,19 +1,6 @@
-.box1 {
-width: 242px; 
-height:208px; 
+.dragbox {
+width: 320px; 
+height:310px; 
 padding: 25px; 
 border: 25px solid navy; 
-margin: 25px; 
-clear: both; 
-float: left
-}
-
-.box2 {
-width: 242px; 
-height:208px; 
-padding: 25px; 
-border: 25px solid blue; 
-margin: 25px; 
-clear: both; 
-float: left
 }

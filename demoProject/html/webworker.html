@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Web Worker Demo</title>
-	<script src="../js/webworkersupport.js"></script>
- </head>
-<body>
-<p>Count numbers: <output id="result"></output></p>
-<button onclick="startWorker()">Start Worker</button> 
-<button onclick="stopWorker()">Stop Worker</button>
-<br><br>
-</body>
+	<head>
+		<title>
+			Web Worker Demo
+		</title>
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="../css/base.css" rel="stylesheet">
+		<script src="../js/webworkersupport.js"></script>
+	</head>
+	<body class="container panel panel-default">
+	<header>
+			<h1>Web Worker</h1>
+		</header>
+		<nav class="navbar navbar-default"	>
+		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+		  <ul>
+			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/webworker.html">Source</a></li>
+			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
+		  </ul>
+		</nav>
+		<section>
+		<article>
+		<p>
+		<h3>	Count numbers: <output id="result"></output></h3>
+		</p>
+		<button onclick="startWorker()"><h4>Start Worker</h4></button>
+		<button onclick="stopWorker()"><h4>Stop Worker</h4></button><br>
+	</article>
+		</section>
+		<footer>
+			<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		</footer>
+	</body>
 </html>
