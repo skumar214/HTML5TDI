@@ -4,7 +4,10 @@
 		<title>
 			Geolocation Demo
 		</title>
-		<link rel="stylesheet" href="../css/bootstrap.min.css">
+				<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="../js/vendor/bootstrap.min.js"></script>
 		<link href="../css/base.css" rel="stylesheet">
 		<script src="../js/geolocation.js"></script>
 	</head>
@@ -13,21 +16,39 @@
 			<h1>Geo Location</h1>
 		</header>
 		<nav class="navbar navbar-default"	>
-		<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand" />
-		  <ul>
-			 <li><a class="btn btn-default navbar-btn" href="view-source:http://localhost/html/geolocation.html">Source</a></li>
-			<li><a class="btn btn-default navbar-btn" href="/index.html">Home</a></li>
-		  </ul>
-		</nav>
+<img class="navbar-brand" src="../img/html5.png" alt="HTML5 Brand"/>
+  <ul class="nav nav-pills">
+     <li role="presentation"><a  href="/index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+     <li role="presentation"><a  href="view-source:http://localhost/html/geolocation.html"><span class="glyphicon glyphicon-film"></span>&nbsp;Source</a></li>
+     <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-expanded="false">
+          <span class="glyphicon glyphicon-list"></span>&nbsp;Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          				          				<li><a href="symantic.html">Symantic Elements</a></li>
+						<li><a href="dragdrop.html">Drag and Drop</a></li>
+						<li><a href="canvasbasic.html">Canvas</a></li>
+						<li><a href="svgbasic.html">Scalable Vector Graphics</a></li>
+						<li><a href="video.html">Video & Audio</a></li>
+						<li><a href="geolocation.html">Geo location</a></li>
+						<li><a href="storage.html">Storage</a></li>
+						<li><a href="webworker.html">Webworker</a></li>
+						<li><a href="appcache.html">Application Cache</a></li>
+						<li><a href="serversideevents.html">Server Side Events</a></li>
+						<li><a href="webmessaging1.html">Cross-document Messaging</a></li>
+        </ul>
+      </li>
+  </ul>
+</nav>
 		<section>
 		<article>
 		<button onclick="getLocation()"><h4>Click the button to get your coordinates</h4></button>
 		<h4><p id="demo"></p></h4>
-		<div id="mapholder"></div>
+		<div id="mapholder"> </div>
 	</article>
 		</section>
 		<footer>
-		<h5><p>&copy; 2015 Monday Times. All rights reserved.</p></h5>
+		<p>&copy; 2015. Overview of HTML5 Key Features.</p>
 		</footer>
 	</body>
 </html>
