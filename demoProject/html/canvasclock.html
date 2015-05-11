@@ -10,15 +10,15 @@ function drawClock() {
 	var c = document.getElementById("canvasclock");
 	var ctx = c.getContext("2d");
 	var radius = c.height / 2;
-	c.width = 640;
-	c.height = 480;
+
 	ctx.translate(radius, radius);
-	radius = radius * 0.90;
-	setInterval(drawClock, 1000);
-    
+
 	drawFace(ctx, radius);
 	drawNumbers(ctx, radius);
 	drawTime(ctx, radius);
+	ctx.translate(-radius, -radius);
+	setTimeout(drawClock,1000);
+	
 }
 
 function drawFace(ctx, radius) {
@@ -88,10 +88,10 @@ function drawHand(ctx, pos, length, width) {
     ctx.rotate(-pos);
 }
 
+
+
  </script>
-<body onload="drawClock()">
-	<div>
-		<canvas id="canvasclock" class="one"></canvas>
-	</div>
+<body onload="drawClock();">
+		<canvas id="canvasclock"></canvas>
 </body>
 </html>

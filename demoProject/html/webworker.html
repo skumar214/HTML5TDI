@@ -10,7 +10,36 @@
 		<script src="../js/vendor/bootstrap.min.js"></script>
 		<link href="../css/base.css" rel="stylesheet">
 		<script src="../js/webworkersupport.js"></script>
-	</head>
+		<script>
+		
+	function complexWork(){
+		var startTime = new Date().getTime();
+		var count = 0
+		for (var i=0; i<10; i++)
+    		{
+			var count = count + moreComplexWork();
+    		}
+    		document.getElementById("data").innerHTML = "Work Output: "+count;
+			var endTime = new Date().getTime();
+			document.getElementById("time").innerHTML = "Time Taken: "+(endTime-startTime)/1000 +" seconds" ;
+	}
+
+
+    function moreComplexWork() {
+
+		var count = 0
+    	for (var i=0; i<1000000000; i++)
+    		{
+			count = count + i;
+    		}
+		return count;           
+        }
+
+
+
+		</script>
+
+		</head>
 	<body class="container panel panel-default">
 	<header>
 			<h1>Web Worker</h1>
@@ -40,13 +69,30 @@
       </li>
   </ul>
 </nav>
+Launch in Firefox
 		<section>
+		<h3>Work Done without the help of workers!</h3>
 		<article>
-		<p>
-		<h3>	Count numbers: <output id="result"></output></h3>
-		</p>
-		<button onclick="startWorker()"><h4>Start Worker</h4></button>
-		<button onclick="stopWorker()"><h4>Stop Worker</h4></button><br>
+		<input id="b1" type="button" onclick="complexWork()" value="Start Work"/> 
+		<div id="data"></div>
+		<div id="time"></div>
+	</article>
+	</section>
+	<section>
+	<h3>Work Done by single worker!</h3>
+		<article>
+		<input id="b2" type="button" onclick="startWork()" value="Start Work"/> 
+		<div id="datawork"></div>
+
+		<!--<a href="http://ie.microsoft.com/testdrive/Graphics/WorkerFountains/Default.html">Live Demo</a> -->
+	</article>
+		</section>
+	<section>
+	<h3>Work Done by 11 workers!</h3>
+		<article>
+		<input type="button" onclick="startParallelWork()" value="Start Work"/> 
+		<div id="datamultiwork"></div>
+		<!--<a href="http://ie.microsoft.com/testdrive/Graphics/WorkerFountains/Default.html">Live Demo</a> -->
 	</article>
 		</section>
 		<footer>

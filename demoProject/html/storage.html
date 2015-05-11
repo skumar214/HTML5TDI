@@ -41,15 +41,17 @@
   </ul>
 </nav>
 		<section>
+		<h3>Data from session storage</h3>
 		<article>
-		<h3>Local Result:
-		<div id="localresult"></div>
-		</h3>
+		<div style="text-align:center;color:red;margin-bottom:2em" id="sessionmsg"></div>
+		User Name: <input type="text" id="username" />
+		Password: <input type="password" id="password" />
+		<input type="submit" value="Login" onclick="saveSession()"/>
+		<div id="sessionuser" style="text-align:right"></div>
 		</article>
 		<article>
-		<h3>Session Result:
-		<div id="sessionresult"></div><button onclick="sessionClick()">Click</button>
-		</h3>
+		<h3>Data from local storage</h3>
+		<div style="text-align:center;color:blue;margin-bottom:2em" id="localmsg"></div>
 		</article>
 		</section>
 		<footer>

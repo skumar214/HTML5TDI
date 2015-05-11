@@ -1,0 +1,12 @@
+function moreComplexWork() {
+
+		var count = 0
+    	for (var i=0; i<1000000000; i++)
+    		{
+			count = count + i;
+    		}
+		postMessage(count);           
+        }
+
+
+moreComplexWork();
