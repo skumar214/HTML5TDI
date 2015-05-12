@@ -10,11 +10,11 @@
 <script>
 function messagingExample() {
        var o = document.getElementById("ifr");
-		o.contentWindow.postMessage('Hello B', 'http://localhost/html/webmessaging2.html');
+		o.contentWindow.postMessage('Hello Same Origin', 'http://localhost/html/webmessaging2.html');
     }
 function remoteMessaging() {
        var o = document.getElementById("remotepage");
-		o.contentWindow.postMessage('Hello Remote', 'http://html5demos.com/');
+		o.contentWindow.postMessage('Hello Remote', 'http://localhost:8080/html/webmessaging2.html');
     }
 </script>
 </head>
@@ -48,13 +48,17 @@ function remoteMessaging() {
   </ul>
 </nav>
 		<section>
+		<h3>Same origin messaging</h3>
 		<article>
-<iframe height="200" id="ifr" src="/html/webmessaging2.html" ></iframe>
-<h4><input type="button" value="Send Message to Local Iframe" onclick="messagingExample();"/></h4>
+<iframe height="200" id="ifr" src="http://localhost/html/webmessaging2.html" ></iframe>
+<h4><input type="button" value="Send Message" onclick="messagingExample();"/></h4>
 </article>
+</section>
+<section>
+<h3>Cross origin messaging</h3>
 <article>
-<iframe id="remotepage" src="http://html5demos.com/postmessage-target.html"></iframe>
-<h4><input type="button" value="Send Message to Remote Iframe" onclick="remoteMessaging();"/></h4>
+<iframe id="remotepage" src="http://localhost:8080/html/webmessaging2.html"></iframe>
+<h4><input type="button" value="Send Message" onclick="remoteMessaging();"/></h4>
 </article>
 </section>
 		<footer>

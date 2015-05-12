@@ -18,3 +18,7 @@ nav ul li {
 header, section, footer, aside, nav, main, article, figure {
      display: block; 
 }
+aside{
+    display:inline;
+    float:right;
+}

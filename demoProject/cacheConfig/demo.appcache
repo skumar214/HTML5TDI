@@ -3,9 +3,10 @@ CACHE MANIFEST
 
 CACHE:
 /js/appCache.js
+/css/base.css
 
 NETWORK:
 *
 
 FALLBACK:
-/onlinemodule /appcachefallback.html
+/onlinemodule.html /html/appcachefallback.html
