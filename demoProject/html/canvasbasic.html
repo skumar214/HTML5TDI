@@ -16,8 +16,8 @@ function drawShape(){
 
 		// use getContext to use the canvas for drawing
 		var ctx = c.getContext('2d'); //webgl
-		c.height = 400;
-		c.width = 800;
+	//	c.height = 400;
+	//	c.width = 800;
 		//Draw a Line
 		ctx.moveTo(0,0);
 		ctx.lineTo(200,100);
@@ -51,28 +51,34 @@ function drawShape(){
 
 
 		// Create Circular gradient
-		var grd = ctx.createRadialGradient(200,300,20,200,300,100); //x0,y0,r0,x1,y1,r1
+		var grd = ctx.createRadialGradient(250,50,20,250,50,40); //x0,y0,r0,x1,y1,r1
 		grd.addColorStop(0,"red");
 		grd.addColorStop(1,"white");
 		ctx.fillStyle = grd;
-		//ctx.fillRect(20,300,600,200); //x,y,width,height
 		ctx.beginPath();
-		ctx.arc(200,300,100,0,360); //x,y,r,start angle,end angle,counterclockwise
+		ctx.arc(250,50,40,0,360); //x,y,r,start angle,end angle,counterclockwise
 		ctx.fill();
 		ctx.stroke();
-
-		//Redraw gradient
-		alert("About to manipulate the canvas - Notice the radial gradient");
-		// Create Circular gradient
-		grd.addColorStop(0,"blue");
-		grd.addColorStop(1,"white");
-		ctx.fill();
-
 
 		} else {
 		alert('Not Supported');
 		}
 		}
+
+	function modifyCanvas()
+	{
+		var c = document.getElementById('mycanvas');
+		var ctx = c.getContext('2d'); 
+		var grd = ctx.createRadialGradient(250,50,20,250,50,40); //x0,y0,r0,x1,y1,r1
+		grd.addColorStop(0,"blue");
+		grd.addColorStop(1,"white");
+		ctx.fillStyle = grd;
+		ctx.beginPath();
+		ctx.arc(250,50,40,0,360); //x,y,r,start angle,end angle,counterclockwise
+		ctx.fill();
+		ctx.stroke();
+	
+	}
 		</script>
 		<title></title>
 	</head>
@@ -108,7 +114,10 @@ function drawShape(){
 		<section>
 		<article>
 		<canvas id="mycanvas"></canvas>
+		<input type="button" style="display:block; margin-top:2em" onclick="modifyCanvas()" value="Modify Canvas">
 		</article>
+		<a href="http://phrogz.net/tmp/image_move_speed_css.html" target="_blank">HTML4 Way</a> &nbsp;|&nbsp;
+		<a href="http://ie.microsoft.com/Testdrive/Graphics/WorkerFountains/Default.html" target="_blank">Check This Out!</a> 
 		</section>
 			<footer>
 			<p>&copy; 2015. Overview of HTML5 Key Features.</p>

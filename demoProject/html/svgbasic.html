@@ -7,10 +7,9 @@
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="../js/vendor/bootstrap.min.js"></script>
 		<script>
-		$(document ).ready(function(){
-			alert("About to manipulate DOM - Notice the circle border")
+		function modifySVG(){
 			$('circle').attr('stroke', 'red');
-		});
+		}
 		</script>
 <link href="../css/base.css" rel="stylesheet">
 </head>
@@ -47,10 +46,9 @@
 		<section>
 		<article>
 <!-- Scalable Vector Graphics-->
-<svg width="800" height="600">
-  <circle cx="200" cy="250" r="40" stroke="green" stroke-width="4" fill="yellow" />
-  
-  <rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+<svg width="800" height="300">
+  <rect width="400" height="50" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+  <circle cx="200" cy="100" r="40" stroke="green" stroke-width="4" fill="yellow" />
   
    <defs>
     <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -58,13 +56,13 @@
       <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
     </lineargradient>
   </defs>
-  
-  <ellipse cx="300" cy="400" rx="85" ry="55" fill="url(#grad1)" />
-  
-  <text fill="#ffffff" font-size="45" font-family="Verdana" x="250" y="410">SVG</text>
+  <ellipse cx="200" cy="210" rx="85" ry="55" fill="url(#grad1)" />
+  <text fill="#ffffff" font-size="45" font-family="Verdana" x="150" y="210">SVG</text>
   Sorry, your browser does not support inline SVG.
 </svg>
+  <input type="button" style="display:block; margin-top:2em" onclick="modifySVG()" value="Modify SVG">
 	</article>
+	<a href="http://timmywil.github.io/jquery.panzoom/demo/" target="_blank">Check This Out!</a> 
 </section>
 		<footer>
 			<p>&copy; 2015. Overview of HTML5 Key Features.</p>
