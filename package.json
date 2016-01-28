@@ -1,7 +1,7 @@
 {
 	"name"		: "SampleGrunt",
 	"version"	: "0.0.1"	,
-	"author"	: "Saurabh Kumar B",
+	"author"	: "Saurabh Kumar 1",
 	"private"	: true,
 
 	"devDependencies"	: {
